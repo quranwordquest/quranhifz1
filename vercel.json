@@ -1,6 +1,1 @@
-JSON
-{
-  "buildCommand": "cd ayah-puzzle && pnpm run build",
-  "outputDirectory": "ayah-puzzle/dist",
-  "installCommand": "pnpm install"
-}
+
