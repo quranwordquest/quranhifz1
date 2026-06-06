@@ -1,0 +1,122 @@
+BUG FIX PASS – PRE-PUBLISH REVIEW
+
+Please investigate and fix the following issues without changing existing gameplay or UI design.
+
+⸻
+
+BUG 1 – WORD DUPLICATION
+
+Issue:
+
+In Word Puzzle mode, if a user taps a word in the Answer Area very quickly multiple times, the same word can appear multiple times in the Word Bank.
+
+Result:
+
+The word becomes duplicated and the puzzle state becomes invalid.
+
+Task:
+
+Review:
+
+* handleBankWordClick
+* handleAnswerWordClick
+
+Ensure a word can only exist in ONE location at a time:
+
+* Word Bank
+    OR
+* Answer Area
+
+Never both.
+
+Add protection against rapid repeated clicks and race conditions caused by React state updates.
+
+Verify:
+
+* Slow tapping
+* Fast tapping
+* Repeated tapping
+* Mobile tapping
+
+No duplicates should ever be possible.
+
+⸻
+
+BUG 2 – DUPLICATE AYAHS IN ARRANGE AYAHS
+
+Issue:
+
+Surah Al-Kafirun contains repeated ayahs.
+
+Ayah 3:
+وَلَا أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ
+
+Ayah 5:
+وَلَا أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ
+
+When these are placed correctly in Arrange Ayahs mode, the puzzle still reports:
+
+“Order Incorrect”
+
+because identical text appears more than once.
+
+Task:
+
+Review Arrange Ayahs answer-checking logic.
+
+Do NOT compare ayahs by text.
+
+Instead compare using unique identifiers such as:
+
+* ayah number
+    OR
+* internal unique id
+
+The system must correctly distinguish between repeated ayahs.
+
+⸻
+
+FULL QURAN DUPLICATE REVIEW
+
+Do not only fix Al-Kafirun.
+
+Scan all 114 surahs and identify any surah that contains repeated ayah text.
+
+Examples:
+
+* repeated ayahs
+* identical ayah wording occurring multiple times within the same surah
+
+Verify Arrange Ayahs works correctly in ALL such cases.
+
+The game should always validate according to ayah number/order, not text uniqueness.
+
+⸻
+
+REGRESSION TESTING
+
+After fixing:
+
+Verify:
+
+✓ Word Puzzle still works
+✓ Arrange Ayahs still works
+✓ Hint system still works
+✓ Random Challenge still works
+✓ Audio still works
+✓ Progress tracking still works
+
+Specifically test:
+
+* Surah Al-Kafirun
+* Surah Al-Ikhlas
+* Surah Al-Falaq
+* Surah An-Nas
+
+Confirm no TypeScript errors and no console errors.
+
+Provide a summary of:
+
+1. Root cause of each bug
+2. Exact fix applied
+3. Any ot

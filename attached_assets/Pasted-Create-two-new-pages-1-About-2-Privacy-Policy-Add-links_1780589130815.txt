@@ -1,0 +1,91 @@
+Create two new pages:
+
+1. About
+2. Privacy Policy
+
+Add links to both pages in the website footer.
+
+Use the existing design theme and translations system.
+
+⸻
+
+ABOUT PAGE
+
+Title:
+
+About Quran Word Quest
+
+Content:
+
+Quran Word Quest was created to help learners strengthen their Quran memorisation through simple and engaging revision activities.
+
+The aim is to encourage regular interaction with the Quran by allowing users to:
+
+• Rebuild ayahs by arranging words in the correct order.
+• Arrange ayahs into their correct sequence.
+• Practice revision through random ayah challenges.
+• Listen to recitation before attempting a puzzle.
+• Revise at their own pace.
+
+The focus of the project is simplicity and beneficial learning rather than competition or gamification.
+
+May Allah make it a source of benefit for all who use it.
+
+Add a simple button:
+
+Back to Home
+
+⸻
+
+PRIVACY POLICY PAGE
+
+Title:
+
+Privacy Policy
+
+Content:
+
+Quran Word Quest respects your privacy.
+
+This website does not require user accounts and does not collect personal information for registration purposes.
+
+Progress information, such as completed ayahs and revision time, is stored locally within your browser using local storage. This information remains on your device and is not transmitted to a server.
+
+The website may use standard hosting and analytics services provided by the hosting platform. These services may collect basic technical information such as browser type or device information.
+
+No Quran revision data is sold or shared with third parties.
+
+If future features require changes to this policy, this page will be updated accordingly.
+
+Add a simple button:
+
+Back to Home
+
+⸻
+
+FOOTER
+
+Add footer links:
+
+About
+Privacy Policy
+
+Ensure they work on all pages.
+
+⸻
+
+TRANSLATIONS
+
+Add translations for all new page text in every supported language.
+
+⸻
+
+FINAL CHECK
+
+Verify:
+
+• Mobile responsive
+• No TypeScript errors
+• Footer links work correctly
+• Back to Home buttons work correctly
+• Existing functionality remains unchanged

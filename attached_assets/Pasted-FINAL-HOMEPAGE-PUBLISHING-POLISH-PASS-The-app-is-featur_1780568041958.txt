@@ -1,0 +1,241 @@
+FINAL HOMEPAGE & PUBLISHING POLISH PASS
+
+The app is feature complete.
+
+Do NOT add any new game modes, streaks, XP systems, badges, accounts, leaderboards, notifications, or gamification features.
+
+Keep all existing functionality exactly as it currently works:
+
+* Word Puzzle
+* Arrange Ayahs
+* Random Ayah Challenge
+* Audio
+* Hint System
+* Language Support
+* Progress Tracking
+* Basmalah Handling
+* Navigation
+* Theme
+
+Only improve the homepage experience and publishing readiness.
+
+⸻
+
+1. HOMEPAGE HERO SECTION
+
+⸻
+
+Keep:
+
+Quran Word Quest
+
+Revise Quran in a Fun Way
+
+Replace the description with:
+
+“Strengthen your Quran memorisation through interactive revision activities.”
+
+⸻
+
+2. FEATURE CARDS
+
+⸻
+
+Directly below the description add three feature cards.
+
+Card 1:
+
+🧩 Ayah Puzzle
+
+“Rebuild ayahs by arranging the words in the correct order.”
+
+Card 2:
+
+📖 Arrange Ayahs
+
+“Place ayahs back into their correct sequence and strengthen memorisation.”
+
+Card 3:
+
+✨ Random Challenge
+
+“Test your revision with surprise ayahs from across the Quran.”
+
+Design requirements:
+
+* Attractive and mobile friendly
+* Match the current colour theme
+* Consistent card heights
+* Hover effects on desktop
+* Touch friendly on mobile
+
+Navigation behaviour:
+
+Ayah Puzzle:
+
+* Smooth scroll to Surah List section
+
+Arrange Ayahs:
+
+* Smooth scroll to Surah List section
+
+Random Challenge:
+
+* Navigate directly to the existing Random Challenge page
+
+⸻
+
+3. PROGRESS SECTION
+
+⸻
+
+Keep existing progress section exactly as it is.
+
+Place it directly below the feature cards.
+
+Do not add streaks, XP, badges, achievements or statistics.
+
+Only keep:
+
+* Ayahs Completed
+* Time Spent Revising
+
+⸻
+
+4. HOW IT WORKS
+
+⸻
+
+Below the progress section add a compact section:
+
+Title:
+How It Works
+
+Step 1:
+Choose a Surah
+
+Step 2:
+Complete the Puzzle
+
+Step 3:
+Strengthen Your Hifz
+
+Use simple icons.
+
+Keep mobile friendly.
+
+⸻
+
+5. SURAH LIST
+
+⸻
+
+Keep the current Surah List exactly as it is.
+
+Add a section heading above it:
+
+Choose a Surah
+
+Add an id/anchor so the feature cards can scroll here.
+
+⸻
+
+6. ARRANGE AYAHS COMPLETION PAGE
+
+⸻
+
+When a user completes an entire Surah in Arrange Ayahs mode:
+
+Show:
+
+Previous Surah
+Home
+Next Surah
+
+Rules:
+
+* Hide Previous Surah on Surah 1
+* Hide Next Surah on Surah 114
+
+Navigation should remain within Arrange Ayahs mode.
+
+Do not change puzzle logic.
+
+⸻
+
+7. FOOTER
+
+⸻
+
+Keep existing social links.
+
+Add above them:
+
+“Helping make Quran revision engaging for learners worldwide.”
+
+Keep centered and subtle.
+
+⸻
+
+8. RESPONSIVENESS
+
+⸻
+
+Review every page:
+
+* Home
+* Surah Mode
+* Ayah List
+* Word Puzzle
+* Arrange Ayahs
+* Random Challenge
+
+Ensure:
+
+* No horizontal scrolling
+* Buttons remain visible
+* Arabic text never overflows
+* Footer remains readable
+* Language selector remains usable
+
+⸻
+
+9. TRANSLATIONS
+
+⸻
+
+Add translations for all newly added homepage text.
+
+Keep all existing language support working.
+
+Current languages must remain unchanged.
+
+⸻
+
+10. FINAL VERIFICATION
+
+⸻
+
+Manually verify:
+
+* Surah 1
+* Surah 9
+* Surah 114
+
+Check:
+
+* Basmalah handling
+* Audio
+* Hints
+* Arrange Ayahs
+* Random Challenge
+* Progress tracking
+* Language switching
+
+Confirm:
+
+* No TypeScript errors
+* No console errors
+* Production build succeeds
+
+Provide a summary of all completed changes.
